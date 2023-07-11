@@ -11,3 +11,5 @@
 <img width="570" alt="image" src="https://github.com/4khadija/Caravanz/assets/75372993/f7f8fd71-9b35-48fa-9c77-4b8b5829bd33">
 <br>
  
+# AWS Lex Chatbot 
+<img width="1728" alt="Screenshot 2023-07-10 at 1 51 09 PM" src="https://github.com/4khadija/Caravanz/assets/75372993/3e3fc63e-8490-4975-add4-ed8d25090617">
