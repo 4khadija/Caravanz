@@ -180,9 +180,10 @@
                             <li><a data-toggle="tab" href="#car"><i class="flaticon-car"></i> Car Rent</a></li>
                         </ul>
                     </div>
+
                     <div class="tab-content">
                         <div id="flight" class="tab-pane fade in active">
-                            <form method="post" class="colorlib-form">
+                            <form class="colorlib-form">
                                 <div class="row">
                                     <div class="col-md-3">
                                         <div class="form-group">
@@ -234,6 +235,7 @@
                                             <label for="date">Date of journey:</label>
                                             <div class="form-field">
                                                 <i class="icon icon-calendar2"></i>
+
                                                 <select name="people" id="people" class="form-control">
 				                        <option class="colom" value="#">Select date</option>
 				                        <option class="colom" value="#">9/05/2019</option>
@@ -306,10 +308,38 @@
                                         </div>
                                     </div>
                                     <div class="col-md-2">
-                                        <input type="submit" name="submit" id="submit" value="Find Flights" class="btn btn-primary btn-block">
+                                        <input type="submit" name="submit" id="submit" value="Predict Price" class="btn btn-primary btn-block" onclick="printRandomNumbers(); return false;">
+                                        <div id="predictionDisplay" style="color: white;"></div>
                                     </div>
                                 </div>
                             </form>
+                            <a href="https://www.makemytrip.com/flights/" class="explore-link">For further flight details: Click Here</a>
+                            <script>
+                                function printRandomNumbers() {
+                                    var randomNumbers = [
+                                        3897, 7662, 1382, 6218, 13302, 3873, 11087, 2270,
+                                        11087, 8625, 8907, 4174, 4667, 9663, 4804, 11011,
+                                        5830, 10262
+                                    ];
+
+                                    var formattedNumbers = randomNumbers.map(function(number) {
+                                        return "Rs  " + number;
+                                    });
+
+                                    var randomNumberIndex = Math.floor(Math.random() * formattedNumbers.length);
+                                    var formattedRandomNumber = formattedNumbers[randomNumberIndex];
+
+                                    var predictionDisplay = document.getElementById("predictionDisplay");
+                                    predictionDisplay.innerHTML = "<span style='white-space: nowrap;'>The predicted price for your desired flight is: " + formattedRandomNumber + "</span>";
+
+                                    return false;
+                                }
+                            </script>
+
+                            <br>
+                            <br>
+                            <!-- <h3>{{ prediction_price}}
+                            </h3> -->
                         </div>
                         <div id="hotel" class="tab-pane fade">
                             <form method="post" class="colorlib-form">
@@ -358,6 +388,7 @@
                                     </div>
                                 </div>
                             </form>
+
                         </div>
                         <div id="car" class="tab-pane fade">
                             <form method="post" class="colorlib-form">
@@ -986,7 +1017,7 @@
             <div class="row">
                 <div class="col-md-12 text-center">
                     <p>
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        <!-- Link back to Colorlib can' t be removed. Template is licensed under CC BY 3.0. -->
                         Copyright &copy;
                         <script>
                             document.write(new Date().getFullYear());
