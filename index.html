@@ -54,7 +54,9 @@
     <!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
-
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 
 <body>
@@ -187,46 +189,116 @@
                                 <div class="row">
                                     <div class="col-md-3">
                                         <div class="form-group">
-                                            <label for="date">Airline:</label>
+                                            <label for="airline">Airline:</label>
                                             <div class="form-field">
-                                                <i class="icon icon-arrow-down3"></i>
-                                                <select name="people" id="people" class="form-control">
-				                        <option class="colom" value="#">Select airline</option>
-				                        <option class="colom" value="#">Jet Airways</option>
-				                        <option class="colom" value="#">Indigo</option>
-				                        <option class="colom" value="#">Air India</option>
-				                        <option class="colom" value="#">Fly Emirates</option>
-				                      </select>
+                                                <select name="airline" id="airline" class="form-control">
+                                                    <option value="#">Select airline</option>
+                                                    <option value="Air India">Air India</option>
+                                                    <option value="Air India Express">Air India Express</option>
+                                                    <option value="AIX Connect">AIX Connect</option>
+                                                    <option value="Alliance Air">Alliance Air</option>
+                                                    <option value="GoAir">GoAir</option>
+                                                    <option value="IndiGo">IndiGo</option>
+                                                    <option value="SpiceJet">SpiceJet</option>
+                                                    <option value="TruJet">TruJet</option>
+                                                    <option value="Vistara">Vistara</option>
+                                                    
+                                                </select>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-3">
                                         <div class="form-group">
-                                            <label for="date">Source:</label>
+                                            <label for="source">Source:</label>
                                             <div class="form-field">
-                                                <i class="icon icon-arrow-down3"></i>
-                                                <select name="people" id="people" class="form-control">
-				                        <option class="colom" value="#">Select source</option>
-				                        <option class="colom" value="#">Delhi</option>
-				                        <option class="colom" value="#">Kolkata</option>
-				                        <option class="colom" value="#">Varanasi</option>
-				                        <option class="colom" value="#">Bangalore</option>
-				                      </select>
+                                                <select name="source" id="source" class="form-control">
+                                                    <option value="#">Select source</option>
+<option value="Ahmedabad">Ahmedabad</option>
+<option value="Agra">Agra</option>
+<option value="Amritsar">Amritsar</option>
+<option value="Bangalore">Bangalore</option>
+<option value="Bhubaneshwar">Bhubaneshwar</option>
+<option value="Bhubaneshwar">Bhopal</option>
+<option value="Chandigarh">Chandigarh</option>
+<option value="Chennai">Chennai</option>
+<option value="Dehradun">Dehradun</option>
+<option value="Gurugram">Gurugram</option>
+<option value="Guwahati">Guwahati</option>
+<option value="Gwalior">Gwalior</option>
+<option value="Hyderabad">Hyderabad</option>
+<option value="Indore">Indore</option>
+<option value="Jabalpur">Jabalpur</option>
+<option value="Jaipur">Jaipur</option>
+<option value="Jodhpur">Jodhpur</option>
+<option value="Kanpur">Kanpur</option>
+<option value="Kochi">Kochi</option>
+<option value="Lucknow">Lucknow</option>
+<option value="Meerut">Meerut</option>
+<option value="Mumbai">Mumbai</option>
+<option value="Mysuru">Mysuru</option>
+<option value="Nagpur">Nagpur</option>
+<option value="Nashik">Nashik</option>
+<option value="Patna">Patna</option>
+<option value="Prayagraj">Prayagraj</option>
+<option value="Pune">Pune</option>
+<option value="Raipur">Raipur</option>
+<option value="Rajkot">Rajkot</option>
+<option value="Shimla">Shimla</option>
+<option value="Surat">Surat</option>
+<option value="Thiruvananthapuram">Thiruvananthapuram</option>
+<option value="Udaipur">Udaipur</option>
+<option value="Vadodara">Vadodara</option>
+<option value="Vishakhapatnam">Vishakhapatnam</option>
+
+                                                    <option value="Vadodara">Vadodara</option>
+                                                </select>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-3">
                                         <div class="form-group">
-                                            <label for="date">Destination:</label>
+                                            <label for="destination">Destination:</label>
                                             <div class="form-field">
-                                                <i class="icon icon-arrow-down3"></i>
-                                                <select name="people" id="people" class="form-control">
-				                        <option class="colom" value="#">Select destinaltion</option>
-				                        <option class="colom" value="#">Cochin</option>
-				                        <option class="colom" value="#">Bangalore</option>
-				                        <option class="colom" value="#">Delhi</option>
-				                        <option class="colom" value="#">Hyderabad</option>
-				                      </select>
+                                                <select name="source" id="source" class="form-control">
+                                                    <option value="#">Select source</option>
+<option value="Ahmedabad">Ahmedabad</option>
+<option value="Agra">Agra</option>
+<option value="Amritsar">Amritsar</option>
+<option value="Bangalore">Bangalore</option>
+<option value="Bhubaneshwar">Bhubaneshwar</option>
+<option value="Bhubaneshwar">Bhopal</option>
+<option value="Chandigarh">Chandigarh</option>
+<option value="Chennai">Chennai</option>
+<option value="Dehradun">Dehradun</option>
+<option value="Gurugram">Gurugram</option>
+<option value="Guwahati">Guwahati</option>
+<option value="Gwalior">Gwalior</option>
+<option value="Hyderabad">Hyderabad</option>
+<option value="Indore">Indore</option>
+<option value="Jabalpur">Jabalpur</option>
+<option value="Jaipur">Jaipur</option>
+<option value="Jodhpur">Jodhpur</option>
+<option value="Kanpur">Kanpur</option>
+<option value="Kochi">Kochi</option>
+<option value="Lucknow">Lucknow</option>
+<option value="Meerut">Meerut</option>
+<option value="Mumbai">Mumbai</option>
+<option value="Mysuru">Mysuru</option>
+<option value="Nagpur">Nagpur</option>
+<option value="Nashik">Nashik</option>
+<option value="Patna">Patna</option>
+<option value="Prayagraj">Prayagraj</option>
+<option value="Pune">Pune</option>
+<option value="Raipur">Raipur</option>
+<option value="Rajkot">Rajkot</option>
+<option value="Shimla">Shimla</option>
+<option value="Surat">Surat</option>
+<option value="Thiruvananthapuram">Thiruvananthapuram</option>
+<option value="Udaipur">Udaipur</option>
+<option value="Vadodara">Vadodara</option>
+<option value="Vishakhapatnam">Vishakhapatnam</option>
+
+                                                </select>
                                             </div>
                                         </div>
                                     </div>
@@ -235,63 +307,271 @@
                                             <label for="date">Date of journey:</label>
                                             <div class="form-field">
                                                 <i class="icon icon-calendar2"></i>
+                                                <input type="text" name="journey_date" id="journey_date" class="form-control" placeholder="Select date">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="route">Route:</label>
+                                            <div class="form-field">
+                                                <i class="icon icon-arrow-down3"></i>
+                                                <select name="route" id="route" class="form-control">
+                                                    <option value="#">Select route</option>
+                                                    <option value="Ahmedabad">via - Ahmedabad</option>
+<option value="Agra">via - Agra</option>
+<option value="Amritsar">via - Amritsar</option>
+<option value="Bangalore">via - Bangalore</option>
+<option value="Bhubaneshwar">via - Bhubaneshwar</option>
+<option value="Bhopal">via - Bhopal</option>
+<option value="Chandigarh">via - Chandigarh</option>
+<option value="Chennai">via - Chennai</option>
+<option value="Dehradun">via - Dehradun</option>
+<option value="Gurugram">via - Gurugram</option>
+<option value="Guwahati">via - Guwahati</option>
+<option value="Gwalior">via - Gwalior</option>
+<option value="Hyderabad">via - Hyderabad</option>
+<option value="Indore">via - Indore</option>
+<option value="Jabalpur">via - Jabalpur</option>
+<option value="Jaipur">via - Jaipur</option>
+<option value="Jodhpur">via - Jodhpur</option>
+<option value="Kanpur">via - Kanpur</option>
+<option value="Kochi">via - Kochi</option>
+<option value="Lucknow">via - Lucknow</option>
+<option value="Meerut">via - Meerut</option>
+<option value="Mumbai">via - Mumbai</option>
+<option value="Mysuru">via - Mysuru</option>
+<option value="Nagpur">via - Nagpur</option>
+<option value="Nashik">via - Nashik</option>
+<option value="Patna">via - Patna</option>
+<option value="Prayagraj">via - Prayagraj</option>
+<option value="Pune">via - Pune</option>
+<option value="Raipur">via - Raipur</option>
+<option value="Rajkot">via - Rajkot</option>
+<option value="Shimla">via - Shimla</option>
+<option value="Surat">via - Surat</option>
+<option value="Thiruvananthapuram">via - Thiruvananthapuram</option>
+<option value="Udaipur">via - Udaipur</option>
+<option value="Vadodara">via - Vadodara</option>
+<option value="Vishakhapatnam">via - Vishakhapatnam</option>
 
-                                                <select name="people" id="people" class="form-control">
-				                        <option class="colom" value="#">Select date</option>
-				                        <option class="colom" value="#">9/05/2019</option>
-				                        <option class="colom" value="#">12/06/2019</option>
-				                        <option class="colom" value="#">6/06/2019</option>
-				                        <option class="colom" value="#">21/05/2019</option>
-				                      </select>
+                                                </select>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-3">
-                                        <div class="form-group">
-                                            <label for="date">Route:</label>
-                                            <div class="form-field">
-                                                <i class="icon icon-arrow-down3"></i>
-                                                <select name="people" id="people" class="form-control">
-				                        <option class="colom" value="#">Select route</option>
-				                        <option class="colom" value="#">DEL-BOM-COK</option>
-				                        <option class="colom" value="#">BLR-DEL</option>
-				                        <option class="colom" value="#">CCU-MAA-BLR</option>
-				                        <option class="colom" value="#">BLR-DEL</option>
-				                      </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="form-group">
-                                            <label for="date">Departure Time:</label>
-                                            <div class="form-field">
-                                                <i class="icon icon-arrow-down3"></i>
-                                                <select name="people" id="people" class="form-control">
-				                        <option class="colom" value="#">Select time</option>
-				                        <option class="colom" value="#">17:00</option>
-				                        <option class="colom" value="#">19:00</option>
-				                        <option class="colom" value="#">20:00</option>
-				                        <option class="colom" value="#">6:00</option>
-				                      </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="form-group">
-                                            <label for="date">Arrival Time:</label>
-                                            <div class="form-field">
-                                                <i class="icon icon-arrow-down3"></i>
-                                                <select name="people" id="people" class="form-control">
-				                        <option class="colom" value="#">Select time</option>
-				                        <option class="colom" value="#">19:00</option>
-				                        <option class="colom" value="#">21:00</option>
-				                        <option class="colom" value="#">22:00</option>
-				                        <option class="colom" value="#">8:00</option>
-				                      </select>
 
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="departure_time">Departure Time:</label>
+                                            <div class="form-field time-picker">
+                                                <select name="departure_time" id="departure_time" class="form-control">
+                                                    <option value="00:00">00:00</option>
+<option value="00:15">00:15</option>
+<option value="00:30">00:30</option>
+<option value="00:45">00:45</option>
+<option value="01:00">01:00</option>
+<option value="01:15">01:15</option>
+<option value="01:30">01:30</option>
+<option value="01:45">01:45</option>
+<option value="02:00">02:00</option>
+<option value="02:15">02:15</option>
+<option value="02:30">02:30</option>
+<option value="02:45">02:45</option>
+<option value="03:00">03:00</option>
+<option value="03:15">03:15</option>
+<option value="03:30">03:30</option>
+<option value="03:45">03:45</option>
+<option value="04:00">04:00</option>
+<option value="04:15">04:15</option>
+<option value="04:30">04:30</option>
+<option value="04:45">04:45</option>
+<option value="05:00">05:00</option>
+<option value="05:15">05:15</option>
+<option value="05:30">05:30</option>
+<option value="05:45">05:45</option>
+<option value="06:00">06:00</option>
+<option value="06:15">06:15</option>
+<option value="06:30">06:30</option>
+<option value="06:45">06:45</option>
+<option value="07:00">07:00</option>
+<option value="07:15">07:15</option>
+<option value="07:30">07:30</option>
+<option value="07:45">07:45</option>
+<option value="08:00">08:00</option>
+<option value="08:15">08:15</option>
+<option value="08:30">08:30</option>
+<option value="08:45">08:45</option>
+<option value="09:00">09:00</option>
+<option value="09:15">09:15</option>
+<option value="09:30">09:30</option>
+<option value="09:45">09:45</option>
+<option value="10:00">10:00</option>
+<option value="10:15">10:15</option>
+<option value="10:30">10:30</option>
+<option value="10:45">10:45</option>
+<option value="11:00">11:00</option>
+<option value="11:15">11:15</option>
+<option value="11:30">11:30</option>
+<option value="11:45">11:45</option>
+<option value="12:00">12:00</option>
+<option value="12:15">12:15</option>
+<option value="12:30">12:30</option>
+<option value="12:45">12:45</option>
+<option value="13:00">13:00</option>
+<option value="13:15">13:15</option>
+<option value="13:30">13:30</option>
+<option value="13:45">13:45</option>
+<option value="14:00">14:00</option>
+<option value="14:15">14:15</option>
+<option value="14:30">14:30</option>
+<option value="14:45">14:45</option>
+<option value="15:00">15:00</option>
+<option value="15:15">15:15</option>
+<option value="15:30">15:30</option>
+<option value="15:45">15:45</option>
+<option value="16:00">16:00</option>
+<option value="16:15">16:15</option>
+<option value="16:30">16:30</option>
+<option value="16:45">16:45</option>
+<option value="17:00">17:00</option>
+<option value="17:15">17:15</option>
+<option value="17:30">17:30</option>
+<option value="17:45">17:45</option>
+<option value="18:00">18:00</option>
+<option value="18:15">18:15</option>
+<option value="18:30">18:30</option>
+<option value="18:45">18:45</option>
+<option value="19:00">19:00</option>
+<option value="19:15">19:15</option>
+<option value="19:30">19:30</option>
+<option value="19:45">19:45</option>
+<option value="20:00">20:00</option>
+<option value="20:15">20:15</option>
+<option value="20:30">20:30</option>
+<option value="20:45">20:45</option>
+<option value="21:00">21:00</option>
+<option value="21:15">21:15</option>
+<option value="21:30">21:30</option>
+<option value="21:45">21:45</option>
+<option value="22:00">22:00</option>
+<option value="22:15">22:15</option>
+<option value="22:30">22:30</option>
+<option value="22:45">22:45</option>
+<option value="23:00">23:00</option>
+<option value="23:15">23:15</option>
+<option value="23:30">23:30</option>
+<option value="23:45">23:45</option>
+                                                </select>
                                             </div>
                                         </div>
                                     </div>
+
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="arrival_time">Arrival Time:</label>
+                                            <div class="form-field time-picker">
+                                                <select name="arrival_time" id="arrival_time" class="form-control">
+                                                    <option value="00:00">00:00</option>
+<option value="00:15">00:15</option>
+<option value="00:30">00:30</option>
+<option value="00:45">00:45</option>
+<option value="01:00">01:00</option>
+<option value="01:15">01:15</option>
+<option value="01:30">01:30</option>
+<option value="01:45">01:45</option>
+<option value="02:00">02:00</option>
+<option value="02:15">02:15</option>
+<option value="02:30">02:30</option>
+<option value="02:45">02:45</option>
+<option value="03:00">03:00</option>
+<option value="03:15">03:15</option>
+<option value="03:30">03:30</option>
+<option value="03:45">03:45</option>
+<option value="04:00">04:00</option>
+<option value="04:15">04:15</option>
+<option value="04:30">04:30</option>
+<option value="04:45">04:45</option>
+<option value="05:00">05:00</option>
+<option value="05:15">05:15</option>
+<option value="05:30">05:30</option>
+<option value="05:45">05:45</option>
+<option value="06:00">06:00</option>
+<option value="06:15">06:15</option>
+<option value="06:30">06:30</option>
+<option value="06:45">06:45</option>
+<option value="07:00">07:00</option>
+<option value="07:15">07:15</option>
+<option value="07:30">07:30</option>
+<option value="07:45">07:45</option>
+<option value="08:00">08:00</option>
+<option value="08:15">08:15</option>
+<option value="08:30">08:30</option>
+<option value="08:45">08:45</option>
+<option value="09:00">09:00</option>
+<option value="09:15">09:15</option>
+<option value="09:30">09:30</option>
+<option value="09:45">09:45</option>
+<option value="10:00">10:00</option>
+<option value="10:15">10:15</option>
+<option value="10:30">10:30</option>
+<option value="10:45">10:45</option>
+<option value="11:00">11:00</option>
+<option value="11:15">11:15</option>
+<option value="11:30">11:30</option>
+<option value="11:45">11:45</option>
+<option value="12:00">12:00</option>
+<option value="12:15">12:15</option>
+<option value="12:30">12:30</option>
+<option value="12:45">12:45</option>
+<option value="13:00">13:00</option>
+<option value="13:15">13:15</option>
+<option value="13:30">13:30</option>
+<option value="13:45">13:45</option>
+<option value="14:00">14:00</option>
+<option value="14:15">14:15</option>
+<option value="14:30">14:30</option>
+<option value="14:45">14:45</option>
+<option value="15:00">15:00</option>
+<option value="15:15">15:15</option>
+<option value="15:30">15:30</option>
+<option value="15:45">15:45</option>
+<option value="16:00">16:00</option>
+<option value="16:15">16:15</option>
+<option value="16:30">16:30</option>
+<option value="16:45">16:45</option>
+<option value="17:00">17:00</option>
+<option value="17:15">17:15</option>
+<option value="17:30">17:30</option>
+<option value="17:45">17:45</option>
+<option value="18:00">18:00</option>
+<option value="18:15">18:15</option>
+<option value="18:30">18:30</option>
+<option value="18:45">18:45</option>
+<option value="19:00">19:00</option>
+<option value="19:15">19:15</option>
+<option value="19:30">19:30</option>
+<option value="19:45">19:45</option>
+<option value="20:00">20:00</option>
+<option value="20:15">20:15</option>
+<option value="20:30">20:30</option>
+<option value="20:45">20:45</option>
+<option value="21:00">21:00</option>
+<option value="21:15">21:15</option>
+<option value="21:30">21:30</option>
+<option value="21:45">21:45</option>
+<option value="22:00">22:00</option>
+<option value="22:15">22:15</option>
+<option value="22:30">22:30</option>
+<option value="22:45">22:45</option>
+<option value="23:00">23:00</option>
+<option value="23:15">23:15</option>
+<option value="23:30">23:30</option>
+<option value="23:45">23:45</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                     <div class="col-md-3">
                                         <div class="form-group">
                                             <label for="guests">Stops</label>
@@ -314,6 +594,19 @@
                                 </div>
                             </form>
                             <a href="https://www.makemytrip.com/flights/" class="explore-link">For further flight details: Click Here</a>
+
+
+                            <script>
+                                $(function() {
+                                    $("#journey_date").datepicker({
+                                        dateFormat: "dd/mm/yy",
+                                        yearRange: "2002:2024",
+                                        changeYear: true,
+                                        changeMonth: true
+                                    });
+                                });
+                            </script>
+
                             <script>
                                 function printRandomNumbers() {
                                     var randomNumbers = [
