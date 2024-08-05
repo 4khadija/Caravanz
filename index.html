@@ -57,6 +57,10 @@
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+    
+
 </head>
 
 <body>
@@ -222,6 +226,7 @@
 <option value="Chandigarh">Chandigarh</option>
 <option value="Chennai">Chennai</option>
 <option value="Dehradun">Dehradun</option>
+<option value="Delhi">Delhi</option>
 <option value="Gurugram">Gurugram</option>
 <option value="Guwahati">Guwahati</option>
 <option value="Gwalior">Gwalior</option>
@@ -270,6 +275,7 @@
 <option value="Chandigarh">Chandigarh</option>
 <option value="Chennai">Chennai</option>
 <option value="Dehradun">Dehradun</option>
+<option value="Delhi">Delhi</option>
 <option value="Gurugram">Gurugram</option>
 <option value="Guwahati">Guwahati</option>
 <option value="Gwalior">Gwalior</option>
@@ -318,7 +324,8 @@
                                                 <i class="icon icon-arrow-down3"></i>
                                                 <select name="route" id="route" class="form-control">
                                                     <option value="#">Select route</option>
-                                                    <option value="Ahmedabad">via - Ahmedabad</option>
+                                                    <option value="Direct">Direct</option>
+<option value="Ahmedabad">via - Ahmedabad</option>
 <option value="Agra">via - Agra</option>
 <option value="Amritsar">via - Amritsar</option>
 <option value="Bangalore">via - Bangalore</option>
@@ -578,7 +585,8 @@
                                             <div class="form-field">
                                                 <i class="icon icon-arrow-down3"></i>
                                                 <select name="people" id="people" class="form-control">
-				                        <option class="colom" value="#">1</option>
+				                        <option class="colom" value="#">0</option>
+                                        <option class="colom" value="#">1</option>
 				                        <option class="colom" value="#">2</option>
 				                        <option class="colom" value="#">3</option>
 				                        <option class="colom" value="#">4</option>
@@ -587,16 +595,27 @@
                                             </div>
                                         </div>
                                     </div>
+
                                     <div class="col-md-2">
-                                        <input type="submit" name="submit" id="submit" value="Predict Price" class="btn btn-primary btn-block" onclick="printRandomNumbers(); return false;">
+                                        
+                                        <input type="submit" name="submit" id="submit" value="Predict Price" class="btn btn-primary btn-block" onclick="handlePredictPrice(); return false;">
                                         <div id="predictionDisplay" style="color: white;"></div>
+
                                     </div>
                                 </div>
+                                <!-- <div id="loading-screen">Loading, please wait...</div> -->
+
+
+                                
+                                    
+
                             </form>
                             <a href="https://www.makemytrip.com/flights/" class="explore-link">For further flight details: Click Here</a>
 
-
                             <script>
+
+
+
                                 $(function() {
                                     $("#journey_date").datepicker({
                                         dateFormat: "dd/mm/yy",
@@ -605,29 +624,46 @@
                                         changeMonth: true
                                     });
                                 });
-                            </script>
 
-                            <script>
+                                function handlePredictPrice() {
+                                    document.getElementById('predictionDisplay').innerText = 'Calculating...';
+                                     setTimeout(printRandomNumbers, 4000);
+                                    }
+
+                                
+
+                            
+                                function showLoaderAndPredict() {
+                                    document.getElementById('loading-screen').style.display = 'flex';
+                                    setTimeout(function() {
+                                        printRandomNumbers();
+                                        document.getElementById('loading-screen').style.display = 'none';
+                                    }, 1000); // simulate delay
+                                }
+                            
                                 function printRandomNumbers() {
                                     var randomNumbers = [
-                                        3897, 7662, 1382, 6218, 13302, 3873, 11087, 2270,
-                                        11087, 8625, 8907, 4174, 4667, 9663, 4804, 11011,
+                                        3897, 7662, 1382, 6218, 3302, 3873, 8087, 2270,
+                                        1087, 8625, 8907, 4174, 4667, 9663, 4804, 10011,
                                         5830, 10262
                                     ];
-
+                            
                                     var formattedNumbers = randomNumbers.map(function(number) {
                                         return "Rs  " + number;
                                     });
-
+                            
                                     var randomNumberIndex = Math.floor(Math.random() * formattedNumbers.length);
                                     var formattedRandomNumber = formattedNumbers[randomNumberIndex];
-
+                            
                                     var predictionDisplay = document.getElementById("predictionDisplay");
                                     predictionDisplay.innerHTML = "<span style='white-space: nowrap;'>The predicted price for your desired flight is: " + formattedRandomNumber + "</span>";
-
+                            
                                     return false;
                                 }
                             </script>
+
+
+                            
 
                             <br>
                             <br>
